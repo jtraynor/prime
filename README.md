@@ -1,7 +1,7 @@
 # Prime
 
-Generates prime numbers using the [Sieve of Atkin](https://en.wikipedia.org/wiki/Sieve_of_Atkin) algorithm. The prime
-numbers are streamed back to the caller via a channel.
+Generates prime numbers using the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) algorithm.
+The prime numbers are streamed back to the caller via a channel.
 
 ## Performance
 
