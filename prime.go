@@ -44,10 +44,6 @@ func Generate(out chan<- uint64, target uint64) {
 
 // IsPrime returns if the provided number is a prime number or not.
 func IsPrime(candidate uint64) bool {
-	if candidate <= 1 {
-		return false
-	}
-
 	sqrt := uint64(math.Sqrt(float64(candidate)))
 	for i := uint64(2); i <= sqrt; i++ {
 		if (candidate % i) == 0 {
@@ -55,5 +51,5 @@ func IsPrime(candidate uint64) bool {
 		}
 	}
 
-	return true
+	return candidate > 1
 }
