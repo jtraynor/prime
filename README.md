@@ -11,10 +11,10 @@ benefit of this is that the number of primes that can be generated is impacted m
 
 	--- PASS: TestGenerate
 		--- PASS: TestGenerate/1_Million (0.01s)
-		--- PASS: TestGenerate/10_Million (0.13s)
-		--- PASS: TestGenerate/100_Million (1.40s)
-		--- PASS: TestGenerate/1_Billion (17.92s)
-		--- PASS: TestGenerate/10_Billion (190.90s)
+		--- PASS: TestGenerate/10_Million (0.12s)
+		--- PASS: TestGenerate/100_Million (1.27s)
+		--- PASS: TestGenerate/1_Billion (14.28s)
+		--- PASS: TestGenerate/10_Billion (153.05s)
 
 Run on an Intel Xeon E3-1241 CPU (3.5GHz, 8 logical cores).
 

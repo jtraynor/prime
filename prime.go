@@ -23,8 +23,10 @@ func Generate(out chan<- uint64, target uint64) {
 	i := uint64(0)
 	j := uint64(0)
 
+	out <- 2
+
 	sqrt := uint64(math.Sqrt(float64(target)))
-	for i = 2; i <= sqrt; i++ {
+	for i = 3; i <= sqrt; i += 2 {
 		if !sieve.check(i) {
 			for j = i * i; j <= target; j += i {
 				sieve.set(j)
@@ -33,7 +35,7 @@ func Generate(out chan<- uint64, target uint64) {
 		}
 	}
 
-	for ; i <= target; i++ {
+	for ; i <= target; i += 2 {
 		if !sieve.check(i) {
 			out <- i
 		}

@@ -7,10 +7,8 @@ import (
 )
 
 func BenchmarkGenerate(b *testing.B) {
-	short := testing.Short()
-
 	for name, tc := range checksumTT {
-		if short && !tc.isShort {
+		if !tc.isShort {
 			continue
 		}
 
